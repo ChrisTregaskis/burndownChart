@@ -110,3 +110,7 @@ a {
 #form-submit {
     float: left;
 }
+
+.cancelBtn {
+    float: right;
+}
