@@ -1,0 +1,86 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nanum Gothic", sans-serif;
+    color: #222;
+    background-color: #27ae60;
+}
+
+h1 {
+    font-family: brandon-grotesque, sans-serif;
+    color: #222;
+    letter-spacing: 0.1rem;
+    margin: 10px auto;
+}
+
+.contextBox {
+    height: 600px;
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ecf0f1;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow:
+            0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+            0 12.5px 10px rgba(0, 0, 0, 0.06),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+            0 100px 80px rgba(0, 0, 0, 0.12)
+}
+
+h3, p {
+    margin: 10px auto;
+}
+
+.chartBox {
+    height: 530px;
+    width: 730px;
+    margin: 40px auto;
+}
+
+a {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: #222;
+    font-size: 0.8rem;
+}
+
+#update {
+    position: fixed;
+    z-index: 25;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #222;
+/*//points are: top, left bottom, right bottom*/
+    clip-path: polygon(0 0, 100% -100%, 100% 100%);
+    color: #fff;
+    text-align: right;
+    overflow: hidden;
+    transition: color 0.3s;
+    border-top-right-radius: 5px;
+}
+
+#update p:hover {
+    cursor: pointer;
+    color: #27ae60;
+    transition: color 0.3s;
+}
+
+#update p {
+    transform: rotate(-315deg);
+    font-size: 0.8rem;
+    margin-left: 15px;
+    margin-top: 12px;
+}
